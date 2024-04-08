@@ -6,13 +6,13 @@ app = Flask(__name__)
 
 # Route definition with strict_slashes=False
 @app.route('/', strict_slashes=False)
-def hello():
+def display_hello():
     return "Hello HBNB!"
 
 
 # Route definition with strict_slashes=False
 @app.route('/hbnb', strict_slashes=False)
-def hello():
+def display_HBNB():
     return "HBNB"
 
 
