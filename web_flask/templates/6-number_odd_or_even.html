@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<HTML lang="en">
+    <HEAD>
+        <TITLE>HBNB</TITLE>
+    </HEAD>
+    <BODY>
+        <H1>Number: 89 is odd</H1>
+    </BODY>
+</HTML>
+guillaume@ubuntu:~$ curl 0.0.0.0:5000/number_odd_or_even/32 ; echo ""
+<!DOCTYPE html>
+<HTML lang="en">
+    <HEAD>
+        <TITLE>HBNB</TITLE>
+    </HEAD>
+    <BODY>
+        {% if n % 2 == 0 %}
+        <H1>Number: {{ n }} is even</H1>
+        {% else %}
+        <H1>Number: {{ n }} is odd</H1>
+        {% endif %}
+    </BODY>
+</HTML>
